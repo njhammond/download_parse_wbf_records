@@ -35,9 +35,9 @@ In my case, I wanted to extra the teams, tournament ID, player names, player IDs
 Create CSV file
 ==
 
-Again, nothing fancy. Brute force.
+Again, nothing fancy. Brute force. Assumes all matches are 5 digit IDs. No other 5 character file in local directory.
 
-  ruby output_to_csv.rb ????? > matches.csv
+	ruby output_to_csv.rb ????? > matches.csv
 
 Output
 ==
