@@ -32,6 +32,7 @@ In my case, I wanted to extra the teams, tournament ID, player names, player IDs
 
 	sh extract_data.sh
 
+
 Create CSV file
 ==
 
