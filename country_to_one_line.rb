@@ -1,7 +1,6 @@
 #!/usr/bin/ruby
 
-# Given a file containing a country
-# convert to one line
+# Given a file containing a country, convert to one line
 
 ARGV.each do |file_name|
 	data_file = File.read(file_name)

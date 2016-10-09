@@ -11,14 +11,14 @@ do
 
 	out=players/${file}.players
 	grep person.asp $file > $out
-	ruby players_to_one_line.rb $out > $out.one.txt &
+	ruby players_to_one_line.rb $out > $out.one.txt
 
 	out=first_country/${file}
 	grep "43%" $file > $out
-	ruby country_to_one_line.rb $out > $out.txt &
-	ruby tid_to_one_line.rb $out > $out.tid &
+	ruby country_to_one_line.rb $out > $out.txt
+	ruby tid_to_one_line.rb $out > $out.tid
 
 	out=second_country/${file}
 	grep "44%" $file > $out
-	ruby country_to_one_line.rb $out > $out.txt &
+	ruby country_to_one_line.rb $out > $out.txt
 done

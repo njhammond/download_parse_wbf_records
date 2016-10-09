@@ -19,16 +19,16 @@ Download matches
 
 Edit download_from_wbf.rb and specify a range of matches to download. Easiest way is to find range is to go the WBF web site and find an approximate starting MatchID and an approximate end MatchID.
 
-For Veldhoven, a good range is 38500 to 40500
+For Veldhoven, a good range is 38500 to 45400
 
 	ruby download_from_wbf.rb
 
-This creates files in your local directory that correspond to the MatchID.
+This creates files in your local directory that correspond to the MatchID. Script will be slow. No attempt is made at performance - we do not want to overload the WBF server so one connection at a time sequentially. My experience is that this can take 2-5 seconds per connection so plan accordingly.
 
 Extract data
 ==
 
-In my case, I wanted to extra the teams, tournament ID, player names, player IDs. Nothing fancy about the code - simple brute force.
+In my case, I wanted to extra the teams, tournament ID, player names, player IDs. Nothing fancy about the code - simple brute force. The following script extracts the data from the download HTML pages.
 
 	sh extract_data.sh
 
